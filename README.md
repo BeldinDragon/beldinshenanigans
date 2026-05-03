@@ -1,25 +1,22 @@
+# Beldin's Shenanigans
 
-Installation information
-=======
+1.21.1 Minecraft mod centered around having a lot of customizable features that are mostly unrelated to each other.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+>[!CAUTION]
+> Highly W.I.P, contains a lot of unfinished or bugged features.
+>
+> If you are playing with any other content mod, **proceed at your own risk.**
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+This stands as my first real-size neoforge and java project. Thanks for playing, and if you like my work, make sure to star this repo! 😊
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+***
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+# Current Features
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+N/A
+
+***
+
+## Todo List
+
+Empty.
