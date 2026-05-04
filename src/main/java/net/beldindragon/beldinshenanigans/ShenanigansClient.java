@@ -1,4 +1,4 @@
-package net.beldindragon.shenanigans;
+package net.beldindragon.beldinshenanigans;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

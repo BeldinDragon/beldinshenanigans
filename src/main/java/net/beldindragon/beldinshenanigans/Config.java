@@ -1,4 +1,4 @@
-package net.beldindragon.shenanigans;
+package net.beldindragon.beldinshenanigans;
 
 import java.util.List;
 

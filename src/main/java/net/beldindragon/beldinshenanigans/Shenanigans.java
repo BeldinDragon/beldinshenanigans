@@ -1,6 +1,7 @@
-package net.beldindragon.shenanigans;
+package net.beldindragon.beldinshenanigans;
 
-import net.beldindragon.shenanigans.item.Items;
+import net.beldindragon.beldinshenanigans.block.Blocks;
+import net.beldindragon.beldinshenanigans.item.Items;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +35,7 @@ public class Shenanigans {
         NeoForge.EVENT_BUS.register(this);
 
         Items.register(modEventBus);
+        Blocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +52,9 @@ public class Shenanigans {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Items.BISMUTH);
             event.accept(Items.RAW_BISMUTH);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(Blocks.BISMUTH_BLOCK);
         }
     }
 

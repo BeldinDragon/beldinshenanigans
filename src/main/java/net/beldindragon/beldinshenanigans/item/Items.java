@@ -1,6 +1,6 @@
-package net.beldindragon.shenanigans.item;
+package net.beldindragon.beldinshenanigans.item;
 
-import net.beldindragon.shenanigans.Shenanigans;
+import net.beldindragon.beldinshenanigans.Shenanigans;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
