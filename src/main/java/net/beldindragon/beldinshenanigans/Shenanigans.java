@@ -55,6 +55,7 @@ public class Shenanigans {
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(Blocks.BISMUTH_BLOCK);
+            event.accept(Blocks.BISMUTH_ORE);
         }
     }
 
