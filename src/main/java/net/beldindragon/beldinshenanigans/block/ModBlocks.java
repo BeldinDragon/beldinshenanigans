@@ -1,7 +1,7 @@
 package net.beldindragon.beldinshenanigans.block;
 
 import net.beldindragon.beldinshenanigans.Shenanigans;
-import net.beldindragon.beldinshenanigans.item.Items;
+import net.beldindragon.beldinshenanigans.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -15,7 +15,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class Blocks {
+public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Shenanigans.MOD_ID);
 
@@ -34,7 +34,7 @@ public class Blocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        Items.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

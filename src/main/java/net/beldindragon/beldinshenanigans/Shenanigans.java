@@ -1,7 +1,8 @@
 package net.beldindragon.beldinshenanigans;
 
-import net.beldindragon.beldinshenanigans.block.Blocks;
-import net.beldindragon.beldinshenanigans.item.Items;
+import net.beldindragon.beldinshenanigans.block.ModBlocks;
+import net.beldindragon.beldinshenanigans.item.ModItems;
+import net.beldindragon.beldinshenanigans.item.ModCreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,8 +35,10 @@ public class Shenanigans {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        Items.register(modEventBus);
-        Blocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,12 +53,12 @@ public class Shenanigans {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Items.BISMUTH);
-            event.accept(Items.RAW_BISMUTH);
+            event.accept(ModItems.BISMUTH);
+            event.accept(ModItems.RAW_BISMUTH);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(Blocks.BISMUTH_BLOCK);
-            event.accept(Blocks.BISMUTH_ORE);
+            event.accept(ModBlocks.BISMUTH_BLOCK);
+            event.accept(ModBlocks.BISMUTH_ORE);
         }
     }
 

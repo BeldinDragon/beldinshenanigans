@@ -6,7 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class Items {
+public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Shenanigans.MOD_ID);
 
     public static final DeferredItem<Item> BISMUTH = ITEMS.register("bismuth",
