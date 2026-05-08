@@ -16,7 +16,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties().durability(32)));
+            () -> new ChiselItem(new Item.Properties().durability(256)));
 
 
     public static void register(IEventBus eventBus) {
