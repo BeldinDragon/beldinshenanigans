@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "   ",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 4,
+    "id": "beldinshenanigans:obsidian_stick"
+  }
+}

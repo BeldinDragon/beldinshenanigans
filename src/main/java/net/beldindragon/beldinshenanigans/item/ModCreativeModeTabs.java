@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.OBSIDIAN_STICK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MOD_BLOCK_TAB = CREATIVE_MODE_TAB.register("mod_blocks_tab",
