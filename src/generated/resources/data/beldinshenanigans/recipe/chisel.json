@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "beldinshenanigans:bismuth"
+    },
+    "O": {
+      "item": "beldinshenanigans:obsidian_stick"
+    }
+  },
+  "pattern": [
+    "  B",
+    " O ",
+    "O  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "beldinshenanigans:chisel"
+  }
+}
