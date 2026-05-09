@@ -11,5 +11,14 @@
   "block.beldinshenanigans.magic_block": "Magic Block",
 
   "creativetab.beldinshenanigans.mod_items": "Shenanigans Items",
-  "creativetab.beldinshenanigans.mod_blocks": "Shenanigans Blocks"
+  "creativetab.beldinshenanigans.mod_blocks": "Shenanigans Blocks",
+
+  "tooltip.beldinshenanigans.empty": "",
+  "tooltip.beldinshenanigans.press_shift": "§8Press §e§lSHIFT §8for more info.",
+  "tooltip.beldinshenanigans.collection.bismuth": "§8 - COLLECTION: §6Bismuth §8-",
+  "tooltip.beldinshenanigans.magic_block": "§7Emits powerful effects to entities above it.§r",
+  "tooltip.beldinshenanigans.magic_block2": "§7§lEffects:",
+  "tooltip.beldinshenanigans.magic_block3": "§6Bismuth §7-> §bDiamond",
+  "tooltip.beldinshenanigans.magic_block4": "§cPlayer §7-> §8Slow and Blind",
+  "tooltip.beldinshenanigans.chisel": "§7Turns stones to their variants."
 }
