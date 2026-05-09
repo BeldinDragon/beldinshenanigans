@@ -23,16 +23,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.PRISMATIC_SHRINE.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.PRISMATIC_SHRINE.get());
         tag(ModTags.Blocks.COLLECTION_BISMUTH)
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.PRISMATIC_SHRINE.get())
                 .add(ModBlocks.BISMUTH_ORE.get());
     }
 }

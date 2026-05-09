@@ -44,7 +44,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.BISMUTH.get())
                 .unlockedBy("has_bismuth", has(ModItems.BISMUTH)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGIC_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMATIC_SHRINE.get())
                 .pattern("BLB")
                 .pattern("LDL")
                 .pattern("BLB")

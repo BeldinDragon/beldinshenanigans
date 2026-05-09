@@ -1,7 +1,7 @@
 package net.beldindragon.beldinshenanigans.block;
 
 import net.beldindragon.beldinshenanigans.Shenanigans;
-import net.beldindragon.beldinshenanigans.block.custom.MagicBlock;
+import net.beldindragon.beldinshenanigans.block.custom.PrismaticShrine;
 import net.beldindragon.beldinshenanigans.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,8 +31,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> PRISMATIC_SHRINE = registerBlock("prismatic_shrine",
+            () -> new PrismaticShrine(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

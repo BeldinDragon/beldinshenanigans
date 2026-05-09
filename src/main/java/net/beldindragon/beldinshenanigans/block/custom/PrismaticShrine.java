@@ -23,18 +23,36 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 
-public class MagicBlock extends Block {
-    public MagicBlock(Properties properties) {
+public class PrismaticShrine extends Block {
+    public PrismaticShrine(Properties properties) {
         super(properties);
     }
+
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
             if(itemEntity.getItem().getItem() == ModItems.BISMUTH.get()) {
-                level.playSound(itemEntity, pos, SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS, 1f, 1f);
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+                level.playSound(itemEntity, pos, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS, 5f, 0.7f);
+                if (!level.isClientSide()) {
+                    ((net.minecraft.server.level.ServerLevel) level).sendParticles(
+                            net.minecraft.core.particles.ParticleTypes.WITCH,
+                            pos.getX() + 0.5, pos.getY() + 2.0, pos.getZ() + 0.5,
+                            200, 1, 0.7, 1, 0.4);
 
+                }
+
+
+            } else if (!(itemEntity.getItem().getItem() == Items.DIRT) && !(itemEntity.getItem().getItem() == Items.DIAMOND)){
+                itemEntity.setItem(new ItemStack(Items.DIRT, itemEntity.getItem().getCount()));
+                level.playSound(itemEntity, pos, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS, 5f, 0.7f);
+                if (!level.isClientSide()) {
+                    ((net.minecraft.server.level.ServerLevel) level).sendParticles(
+                            net.minecraft.core.particles.ParticleTypes.WITCH,
+                            pos.getX() + 0.5, pos.getY() + 2.0, pos.getZ() + 0.5,
+                            200, 1, 0.7, 1, 0.4);
+                }
             }
         }
         if(entity instanceof Player player) {
@@ -65,11 +83,11 @@ public class MagicBlock extends Block {
         if(Screen.hasShiftDown()) {
             tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.collection.bismuth"));
             tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.empty"));
-            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.magic_block"));
+            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.prismatic_shrine"));
             tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.empty"));
-            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.magic_block2"));
-            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.magic_block3"));
-            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.magic_block4"));
+            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.prismatic_shrine2"));
+            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.prismatic_shrine3"));
+            tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.prismatic_shrine4"));
             tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.empty"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.beldinshenanigans.press_shift"));

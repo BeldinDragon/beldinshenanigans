@@ -19,7 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BISMUTH_ORE);
         blockWithItem(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
-        blockWithItem(ModBlocks.MAGIC_BLOCK);
+        blockWithItem(ModBlocks.PRISMATIC_SHRINE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
