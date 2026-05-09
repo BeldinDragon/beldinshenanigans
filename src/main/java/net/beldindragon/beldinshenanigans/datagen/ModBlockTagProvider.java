@@ -2,6 +2,7 @@ package net.beldindragon.beldinshenanigans.datagen;
 
 import net.beldindragon.beldinshenanigans.Shenanigans;
 import net.beldindragon.beldinshenanigans.block.ModBlocks;
+import net.beldindragon.beldinshenanigans.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,5 +29,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
+        tag(ModTags.Blocks.COLLECTION_BISMUTH)
+                .add(ModBlocks.BISMUTH_BLOCK.get())
+                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.BISMUTH_ORE.get());
     }
 }
