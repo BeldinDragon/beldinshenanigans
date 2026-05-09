@@ -192,3 +192,9 @@ idea {
         downloadJavadoc = true
     }
 }
+
+tasks.named('runData') {
+    doFirst {
+        delete 'src/generated/resources'
+    }
+}
