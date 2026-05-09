@@ -11,12 +11,19 @@ This stands as my first real-size neoforge and java project. Thanks for playing,
 
 ***
 
-# Current Features
+# Todo List
 
-N/A
+- Extend the Bismuth Collection
+- Brainstorm new collection ideas
 
 ***
 
-## Todo List
+# Current Features
 
-Empty.
+### Bismuth Collection
+- Bismuth item, ores and block.
+- **Chisel**: Swap stone blocks with their variants using right click.
+- **Magic Block**: A bismuth block transforming bismuth into diamond. Don't step on it!
+
+### Ingredients
+- Obsidian Sticks
